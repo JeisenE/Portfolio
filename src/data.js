@@ -6,6 +6,7 @@ const Image = {
 
 export default Image;
 
+
 import Tools1 from "/assets/tools/vscode.png";
 import Tools2 from "/assets/tools/reactjs.png";
 import Tools3 from "/assets/tools/railway.png";
@@ -19,99 +20,115 @@ import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/mysql.png";
 import Tools13 from "/assets/tools/powebi.png";
+import Tools14 from "/assets/tools/laravel.png";
+import Tools15 from "/assets/tools/crystal.png";
 
 export const listTools = [
   {
     id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
+    image: Tools1,
+    name: "Visual Studio Code",
+    description: "Code Editor",
+    delay: "100",
   },
   {
     id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "200",
+    image: Tools2,
+    name: "React JS",
+    description: "Framework",
+    delay: "200",
   },
   {
     id: 3,
-    gambar: Tools3,
-    nama: "Railway",
-    ket: "Deployment",
-    dad: "300",
+    image: Tools3,
+    name: "Railway",
+    description: "Deployment Platform",
+    delay: "300",
   },
   {
     id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "400",
+    image: Tools4,
+    name: "Tailwind CSS",
+    description: "CSS Framework",
+    delay: "400",
   },
   {
     id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "500",
+    image: Tools5,
+    name: "Bootstrap",
+    description: "CSS Framework",
+    delay: "500",
   },
   {
     id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "600",
+    image: Tools6,
+    name: "JavaScript",
+    description: "Programming Language",
+    delay: "600",
   },
   {
     id: 7,
-    gambar: Tools7,
-    nama: "Visual Paradigm",
-    ket: "Design App",
-    dad: "700",
+    image: Tools7,
+    name: "Visual Paradigm",
+    description: "Design Application",
+    delay: "700",
   },
   {
     id: 8,
-    gambar: Tools8,
-    nama: "Github",
-    ket: "Repository",
-    dad: "800",
+    image: Tools8,
+    name: "GitHub",
+    description: "Code Repository",
+    delay: "800",
   },
   {
     id: 9,
-    gambar: Tools9,
-    nama: "Microsoft Visual Studio",
-    ket: "IDE Application",
-    dad: "900",
+    image: Tools9,
+    name: "Microsoft Visual Studio",
+    description: "IDE",
+    delay: "900",
   },
   {
     id: 10,
-    gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1000",
+    image: Tools10,
+    name: "Canva",
+    description: "Design Tool",
+    delay: "1000",
   },
   {
     id: 11,
-    gambar: Tools11,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1100",
+    image: Tools11,
+    name: "Figma",
+    description: "UI/UX Design Tool",
+    delay: "1100",
   },
-{
-  id: 12,
-  gambar: Tools12,
-  nama: "MySQL",
-  ket: "Database",
-  dad: "1200",
-},
-{
-  id: 13,
-  gambar: Tools13,
-  nama: "Power BI",
-  ket: "Data Visualization",
-  dad: "1300",
-},
+  {
+    id: 12,
+    image: Tools12,
+    name: "MySQL",
+    description: "Database",
+    delay: "1200",
+  },
+  {
+    id: 13,
+    image: Tools13,
+    name: "Power BI",
+    description: "Data Visualization Tool",
+    delay: "1300",
+  },
+  {
+    id: 14,
+    image: Tools14,
+    name: "Laravel",
+    description: "Backend Framework",
+    delay: "1400",
+  },
+  {
+    id: 15,
+    image: Tools15,
+    name: "Crystal Reports",
+    description: "Reporting Tool",
+    delay: "1500",
+  },
 ];
 
 import JS from "/assets/lang/js.png";
@@ -120,115 +137,138 @@ import CSS from "/assets/lang/css.png";
 import SQL from "/assets/lang/sql.png";
 import Python from "/assets/lang/python.png";
 import Java from "/assets/lang/java.png";
+import PHP from "/assets/lang/php.png";
 
 export const listLanguage = [
   {
     id: 1,
-    gambar: JS,
-    nama: "JavaScript",
+    image: JS,
+    name: "JavaScript",
     level: "Advanced",
     percent: 85,
-    group: "Frontend",
+    category: "Frontend",
   },
   {
     id: 2,
-    gambar: HTML,
-    nama: "HTML",
+    image: HTML,
+    name: "HTML",
     level: "Advanced",
     percent: 90,
-    group: "Frontend",
+    category: "Frontend",
   },
   {
     id: 3,
-    gambar: CSS,
-    nama: "CSS",
+    image: CSS,
+    name: "CSS",
     level: "Advanced",
     percent: 88,
-    group: "Frontend",
+    category: "Frontend",
   },
   {
     id: 4,
-    gambar: SQL,
-    nama: "SQL",
+    image: SQL,
+    name: "SQL",
     level: "Intermediate",
     percent: 95,
-    group: "Backend",
+    category: "Backend, Database",
   },
   {
     id: 5,
-    gambar: Python,
-    nama: "Python",
+    image: Python,
+    name: "Python",
     level: "Intermediate",
-    percent: 65,
-    group: "Backend",
+    percent: 70,
+    category: "Backend",
   },
   {
     id: 6,
-    gambar: Java,
-    nama: "Java",
+    image: Java,
+    name: "Java",
     level: "Intermediate",
     percent: 90,
-    group: "Backend",
+    category: "Backend",
+  },
+  {
+    id: 7,
+    image: PHP,
+    name: "PHP",
+    level: "Advanced",
+    percent: 80,
+    category: "Backend",
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.png";
-import Proyek2 from "/assets/proyek/proyek2.png";
-import Proyek3 from "/assets/proyek/proyek3.png";
-import Proyek4 from "/assets/proyek/proyek4.png";
-import Proyek5 from "/assets/proyek/proyek5.png";
+import Project1 from "/assets/proyek/proyek1.png";
+import Project2 from "/assets/proyek/proyek2.png";
+import Project3 from "/assets/proyek/proyek3.png";
+import Project4 from "/assets/proyek/proyek4.png";
+import Project5 from "/assets/proyek/proyek5.png";
+import Project6 from "/assets/proyek/proyek6.png";
 
-export const listProyek = [
+export const listProjects = [
   {
     id: 1,
-    gambar: Proyek1,
-    nama: "DiamondCut Motors",
-    periode: "Feb 2024 – Jun 2024",
-    desk:
-      "DiamondCut Motors adalah platform web untuk menampilkan dan memperdagangkan mobil mewah. Website ini memiliki fitur inventori mobil New & Used Cars dengan filter berdasarkan brand seperti Audi, Porsche, dan Ferrari, serta dilengkapi sistem login dan showroom interaktif untuk meningkatkan pengalaman pengguna.",
+    image: Project1,
+    name: "DiamondCut Motors",
+    period: "Feb 2024 – Jun 2024",
+    description:
+      "DiamondCut Motors is a web platform designed to showcase and trade luxury cars. The website features both new and used car inventories with brand-based filters such as Audi, Porsche, and Ferrari. It also includes a login system and an interactive showroom to enhance user experience.",
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 2,
-    gambar: Proyek2,
-    nama: "SkinVigil",
-    periode: "Feb 2025 – Jun 2025",
-    desk:
-      "SkinVigil adalah aplikasi web berbasis React yang bertujuan meningkatkan kesadaran terhadap kanker kulit. Aplikasi ini menyediakan konten edukatif sekaligus sistem AI yang mampu menganalisis foto kulit dan menampilkan persentase kemungkinan kanker, sehingga membantu pengguna lebih proaktif terhadap kesehatan kulit.",
+    image: Project2,
+    name: "SkinVigil",
+    period: "Feb 2025 – Jun 2025",
+    description:
+      "SkinVigil is a React-based web application aimed at increasing awareness of skin cancer. It provides educational content alongside an AI-powered system capable of analyzing skin images and displaying the probability of cancer, helping users become more proactive about skin health.",
     tools: ["React.js", "AI Image Analysis"],
   },
   {
     id: 3,
-    gambar: Proyek3,
-    nama: "MataBatik",
-    periode: "Sep 2024 – Dec 2024",
-    desk:
-      "MataBatik adalah aplikasi web berbasis Machine Learning yang mampu mengklasifikasikan asal motif batik Indonesia melalui unggahan gambar. Sistem ini memprediksi daerah asal batik seperti Solo atau Pekalongan sekaligus menampilkan confidence score dari hasil prediksi. Proyek ini mengintegrasikan TensorFlow dan Flask dengan antarmuka HTML, CSS, dan JavaScript.",
+    image: Project3,
+    name: "MataBatik",
+    period: "Sep 2024 – Dec 2024",
+    description:
+      "MataBatik is a machine learning-based web application that classifies the origin of Indonesian batik motifs through image uploads. The system predicts the batik region, such as Solo or Pekalongan, and displays a confidence score for each prediction. This project integrates TensorFlow and Flask with an HTML, CSS, and JavaScript interface.",
     tools: ["HTML", "CSS", "JavaScript", "Python", "Flask", "TensorFlow"],
   },
   {
     id: 4,
-    gambar: Proyek4,
-    nama: "BitHub",
-    periode: "Feb 2024 – Jul 2024",
-    desk:
-      "BitHub merupakan platform web edukasi untuk mahasiswa Computer Science dan IT yang menyediakan bank soal coding, forum diskusi, serta leaderboard. Website ini dirancang responsif dan interaktif untuk menciptakan pengalaman belajar yang engaging.",
+    image: Project4,
+    name: "BitHub",
+    period: "Feb 2024 – Jul 2024",
+    description:
+      "BitHub is an educational web platform for Computer Science and IT students, providing a coding question bank, discussion forum, and leaderboard. The website is designed to be responsive and interactive to create an engaging learning experience.",
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
-  id: 5,
-  gambar: Proyek5,
-  nama: "Data Jobs Analytics Dashboard",
-  periode: "2024",
-  desk:
-    "Dashboard analitik interaktif yang menampilkan insight mendalam terkait industri Data Jobs secara global. Visualisasi mencakup perbandingan gaji tahunan vs per jam, tren lowongan sepanjang 2024, peran data dengan bayaran tertinggi, proporsi pekerjaan tanpa syarat gelar, hingga distribusi work-from-home. Dashboard ini dirancang untuk membantu pencari kerja dan analis memahami pola pasar kerja data secara komprehensif.",
+    id: 5,
+    image: Project5,
+    name: "Data Jobs Analytics Dashboard",
+    period: "2025",
+    description:
+      "An interactive analytics dashboard that presents in-depth insights into the global data jobs industry. Visualizations include annual vs hourly salary comparisons, job trend analysis throughout 2024, highest-paying data roles, the proportion of jobs without degree requirements, and work-from-home distribution. The dashboard is designed to help job seekers and analysts understand data job market patterns comprehensively.",
+    tools: [
+      "Power BI",
+      "Data Visualization",
+      "Data Analysis",
+      "Dashboard Design",
+    ],
+  },
+  {
+  id: 6,
+  image: Project6,
+  name: "Library Management System",
+  period: "2025",
+  description:
+    "A full-stack library management system that enables users to search, borrow, and return books through a web interface. The system implements authentication, borrowing history, due date tracking, and book availability status. Built with a Laravel backend and MySQL database to manage user data, book records, and transactions efficiently.",
   tools: [
-    "Power BI",
-    "Data Visualization",
-    "Data Analysis",
-    "Dashboard Design"
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Laravel",
+    "MySQL",
   ],
   }
-
 ];
-
